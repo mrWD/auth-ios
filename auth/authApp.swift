@@ -8,8 +8,39 @@
 import SwiftUI
 import SwiftData
 
+import Foundation
+
+final class AppRootManager: ObservableObject {
+    
+    @Published var currentRoot: eAppRoots = .authentication
+    
+    enum eAppRoots {
+        case authentication
+        case home
+    }
+}
+
 @main
 struct authApp: App {
+    
+    @StateObject private var appRootManager = AppRootManager()
+    
+    var body: some Scene {
+        WindowGroup {
+            Group {
+                switch appRootManager.currentRoot {
+                case .authentication:
+                    SignInView()
+                    
+                case .home:
+                    HomeView()
+                }
+            }
+            .environmentObject(appRootManager)
+        }
+        .modelContainer(sharedModelContainer)
+    }
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -22,11 +53,4 @@ struct authApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
-    }
 }

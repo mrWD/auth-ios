@@ -15,6 +15,13 @@
 		77BE5F122C95C32100FBF09E /* authTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE5F112C95C32100FBF09E /* authTests.swift */; };
 		77BE5F1C2C95C32100FBF09E /* authUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE5F1B2C95C32100FBF09E /* authUITests.swift */; };
 		77BE5F1E2C95C32100FBF09E /* authUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE5F1D2C95C32100FBF09E /* authUITestsLaunchTests.swift */; };
+		77BE5F312C95D94600FBF09E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE5F302C95D94600FBF09E /* SignUpView.swift */; };
+		77BE5F382C95DF9E00FBF09E /* Title1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE5F372C95DF9E00FBF09E /* Title1View.swift */; };
+		77BE5F3C2C95E11100FBF09E /* RecoverPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE5F3B2C95E11100FBF09E /* RecoverPasswordView.swift */; };
+		77BE5F432C95E55E00FBF09E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE5F422C95E55E00FBF09E /* SignInView.swift */; };
+		77BE5F482C95E68000FBF09E /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE5F472C95E68000FBF09E /* ButtonStyles.swift */; };
+		77BE5F4A2C95E80B00FBF09E /* TextFieldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE5F492C95E80B00FBF09E /* TextFieldStyles.swift */; };
+		77BE5F4F2C95F08700FBF09E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE5F4E2C95F08700FBF09E /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +53,13 @@
 		77BE5F172C95C32100FBF09E /* authUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = authUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BE5F1B2C95C32100FBF09E /* authUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authUITests.swift; sourceTree = "<group>"; };
 		77BE5F1D2C95C32100FBF09E /* authUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77BE5F302C95D94600FBF09E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		77BE5F372C95DF9E00FBF09E /* Title1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title1View.swift; sourceTree = "<group>"; };
+		77BE5F3B2C95E11100FBF09E /* RecoverPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordView.swift; sourceTree = "<group>"; };
+		77BE5F422C95E55E00FBF09E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		77BE5F472C95E68000FBF09E /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		77BE5F492C95E80B00FBF09E /* TextFieldStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyles.swift; sourceTree = "<group>"; };
+		77BE5F4E2C95F08700FBF09E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +114,9 @@
 				77BE5F002C95C31F00FBF09E /* ContentView.swift */,
 				77BE5F022C95C31F00FBF09E /* Item.swift */,
 				77BE5F042C95C32100FBF09E /* Assets.xcassets */,
+				77BE5F462C95E65800FBF09E /* Styles */,
+				77BE5F362C95DF8400FBF09E /* Components */,
+				77BE5F342C95DF5600FBF09E /* Screens */,
 				77BE5F062C95C32100FBF09E /* Preview Content */,
 			);
 			path = auth;
@@ -128,6 +145,66 @@
 				77BE5F1D2C95C32100FBF09E /* authUITestsLaunchTests.swift */,
 			);
 			path = authUITests;
+			sourceTree = "<group>";
+		};
+		77BE5F2A2C95C39100FBF09E /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				77BE5F422C95E55E00FBF09E /* SignInView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		77BE5F2B2C95C3BE00FBF09E /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				77BE5F302C95D94600FBF09E /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		77BE5F342C95DF5600FBF09E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				77BE5F4D2C95F07700FBF09E /* Home */,
+				77BE5F352C95DF7100FBF09E /* RecoverPassword */,
+				77BE5F2A2C95C39100FBF09E /* SignIn */,
+				77BE5F2B2C95C3BE00FBF09E /* SignUp */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		77BE5F352C95DF7100FBF09E /* RecoverPassword */ = {
+			isa = PBXGroup;
+			children = (
+				77BE5F3B2C95E11100FBF09E /* RecoverPasswordView.swift */,
+			);
+			path = RecoverPassword;
+			sourceTree = "<group>";
+		};
+		77BE5F362C95DF8400FBF09E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				77BE5F372C95DF9E00FBF09E /* Title1View.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		77BE5F462C95E65800FBF09E /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				77BE5F472C95E68000FBF09E /* ButtonStyles.swift */,
+				77BE5F492C95E80B00FBF09E /* TextFieldStyles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		77BE5F4D2C95F07700FBF09E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				77BE5F4E2C95F08700FBF09E /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +338,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				77BE5F012C95C31F00FBF09E /* ContentView.swift in Sources */,
+				77BE5F4A2C95E80B00FBF09E /* TextFieldStyles.swift in Sources */,
+				77BE5F312C95D94600FBF09E /* SignUpView.swift in Sources */,
+				77BE5F4F2C95F08700FBF09E /* HomeView.swift in Sources */,
+				77BE5F382C95DF9E00FBF09E /* Title1View.swift in Sources */,
 				77BE5F032C95C31F00FBF09E /* Item.swift in Sources */,
 				77BE5EFF2C95C31F00FBF09E /* authApp.swift in Sources */,
+				77BE5F432C95E55E00FBF09E /* SignInView.swift in Sources */,
+				77BE5F482C95E68000FBF09E /* ButtonStyles.swift in Sources */,
+				77BE5F3C2C95E11100FBF09E /* RecoverPasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
